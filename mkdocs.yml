@@ -1,0 +1,74 @@
+site_name: MkDocs Material with Netlify CMS
+site_url: 
+site_author: Gaurav Nelson
+site_description: Mkdocs site with Material theme and Netlify CMS
+
+# Repository
+repo_name: gaurav-nelson/demo-mkdocs-netlifycms
+repo_url: https://github.com/gaurav-nelson/demo-mkdocs-netlifycms
+
+# Copyright
+copyright: Copyright &copy; 2021 Gaurav Nelson
+
+# Configuration
+theme:
+  name: material
+  language: en
+  features:
+    - tabs
+    #- instant
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+
+# Plugins
+plugins:
+  - search
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree (Skipping for auto nav)
+# nav:
+#   - Home: index.md
